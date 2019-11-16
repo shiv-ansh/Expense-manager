@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Manager</title>
+</head>
+
+<body>
+    <!-- header of page -->
+    <header>
+        <h1>Expense Manager</h1>
+    </header>
+
+    <!-- div containg 3 main section of page - earn, spent and balance -->
+    <div class="flex-box">
+
+        <!-- earn section -->
+        <section id="earn">
+            <div>
+                <h2>Income</h2>
+
+                <div>
+                    <ol id="earnList">
+
+                    </ol>
+                </div>
+
+                <div class="input">
+
+                    <div>
+                        <label for="earnDes">Description:
+                            <input type="text" id="earnDes">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="earnDes">Amount:
+                            <input type="number" id="earnAmount">
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <button onclick="addMoney()">Add</button>
+                <button onclick="removeItem()" disabled>Remove</button>
+
+                <div>
+                    <h1 id="totalInc">Total Income</h1>
+                    <p id="income"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- spent section -->
+        <section id="spent">
+            <div>
+                <h2>Expenditure</h2>
+
+                <div>
+                    <ol id="spentList">
+
+                    </ol>
+                </div>
+
+                <div class="input">
+
+                    <div>
+                        <label for="spentDes">Description:
+                            <input type="text" id="spentDes">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="spentDes">Amount:
+                            <input type="number" id="spentAmount">
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <button onclick="addSpend()">Add</button>
+                <button onclick="removeItem()" disabled>Remove</button>
+
+                <div>
+                    <h1 id="totalExpd">Total Expenditure</h1>
+                    <p id="expd"></p>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- balance calculation -->
+    <div class="balance">
+        <section>
+            <h1 id="balanceAmt">Balanace Amount</h1>
+            <p id="balance"> </p>
+        </section>
+    </div>
+
+    <!-- footer of the page  -->
+    <footer>
+        <p>&copy;2019 Shivansh Singh</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

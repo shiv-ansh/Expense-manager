@@ -1,0 +1,105 @@
+/* to design the header and balance section */
+header,.balance{
+    text-align: center;
+    background-color: rgba(145, 150, 150, 0.616);
+    margin-top: 0;
+}
+
+
+/* Mobiles screen view (phones, 600px and down) */
+@media only screen and (max-width: 725px) {
+    
+    /* setting width of each section 100% for mobile view */
+    #earn{
+        width: 96%;
+        margin: 10px;
+    }
+    #spent{
+        width: 96%;
+        margin: 10px;
+    }
+
+    /* designing the content of earn and spent section  */
+    .flex-box{
+        text-align: center;
+    }
+
+    /* design for the section having id earn */
+    .flex-box > #earn{
+        background-color: rgb(115, 255, 0);
+    }
+
+    /* design for the section having id spent */
+    .flex-box > #spent{
+        background-color: rgba(214, 241, 62, 0.938);
+    }
+} 
+
+
+
+/* tablets and Large devices  (portrait tablets and laptop, 600px and up) */
+@media only screen and (min-width: 725px) {
+        
+    /* design for the section having id earn */
+    .flex-box > #earn{
+        background-color: rgb(115, 255, 0);
+    }
+
+    /* design for the section having id spent */
+    .flex-box > #spent{
+        background-color: rgba(214, 241, 62, 0.938);
+    }
+
+    .flex-box{
+        display: flex;
+        text-align: center;
+
+    }
+
+    .flex-box section{
+        flex-basis: 50%;
+        margin: 5px;
+    }
+} 
+
+/* list stying */
+#spentList, #earnList{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#spentList > li, #earnList > li{
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.651);
+    margin: 3px;
+}
+
+/* button and input styling */
+
+.input label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    /* font-weight: 100; */
+}
+.input > div{
+    margin: 10px;
+}
+button{
+    margin: 20px;
+    height: 40px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgb(107, 237, 241);
+}
+input{
+    height:25px;
+}
+
+/* deisgn for footer */
+footer{
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.651);
+}
